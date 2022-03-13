@@ -23,7 +23,7 @@
 
 html {
   font-size: 16px;
-  font-family: sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 /******************************************
@@ -32,45 +32,193 @@ html {
 
 main {
   background: rgb(102, 118, 138);
-  float: left;
-  width: 100%;
-  height: 40vh;
   color: white;
+  text-align: center;
+}
+
+main h1 {
+  font-family: 'Fjalla One', sans-serif;
+  color: white;
+  font-size: 4rem;
+  padding-top: 12%;
+}
+
+main > p {
+  padding: 3% 15% 2% 15%;
+  line-height: 20px;
+}
+
+
+main > a {
+  text-decoration: none;
+  color: rgb(219, 223, 226);
+  padding-left: 1%;
+}
+
+main > img {
+  text-align: center;
+}
+
+main > span {
+  font-style: italic;
+  color: black;
+  padding: 5% 0 3% 0;
 }
 
 header {
   float: left;
-  height: 5%;
-  /* margin: 1% 5%; */
+  width: 100%;
+  margin: 2%;
 }
 
-header nav * {
+header nav ul {
   float: left;
-  width: 33.3333%;
+  width: 50%;
+  display: block;
 }
 
-nav ul {
+header img {
+  padding: 0 10%;
+}
+
+nav li {
   float: left;
+  padding-right: 5%;
+}
+
+main h1, main p, main > span {
+  display: block;
+}
+
+header nav > a {
+  color: rgb(102, 118, 138);
+  background: white;
+  padding: 6px 11px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+
+/* second section */
+
+main + section {
+  float: left;
+  width: 100%;
+  color: rgb(22, 31, 42);
+}
+
+main + section h2, main + section p {
+  float: left;
+  width: 100%;
+  padding: 0 30%;
+  text-align: center;
+}
+
+main + section h2 {
+  margin-top: 10%;
+  padding-bottom: 1%;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+main + section p {
+  margin-bottom: 10%;
+  line-height: 20px;
+}
+
+/* third section  */
+
+main + section + section {
+  float: left;
+  width: 100%;
+}
+
+main + section + section > * {
+  float: left;
+  width: 50%;
+  padding: 5%;
+  text-align: center;
+}
+
+main + section + section h3 {
+  font-size: 2rem;
+  font-family: 'Fjalla One', sans-serif;
+  padding-top: 8%;
+}
+
+main + section + section a {
+  text-decoration: none;
+  color: black;
+  border: solid 1px gray;
+  padding: 13px 50px;
+  font-weight: bold;
+}
+
+main + section + section p {
+  padding: 5% 0 10% 0;
+  line-height: 20px;
+}
+
+/* fourth section  */
+
+main + section + section + section {
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+
+main + section + section + section h2 {
+  font-size: 2rem;
+  font-family: 'Fjalla One', sans-serif;
+  padding: 10% 0 2% 0;
+}
+
+main + section + section + section p {
+  padding: 0 30% 4% 30%;
+  line-height: 20px;
+}
+
+main + section + section + section a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Fjalla One', sans-serif;
+  border: solid 1px gray;
+  padding: 13px 50px;
+}
+
+/* footer  */
+
+footer {
+  float: left;
+  width: 100%;
+  background: rgb(22, 31, 42);
+  margin-top: 9%;
+}
+
+footer > section:first-child {
   width: 50%;
 }
 
-/* main > p + img {
-  
+footer > section + section {
+  width: 50%;
+}
+
+footer > section + section + section {
+  width: 100%;
+}
+
+/* footer nav > ul:first-child {
+  float: left;
+  width: 33.3333%;
 } */
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
 
+
 header a {
   color: white;
   text-decoration: none;
-}
-
-main + section {
-  /* float: left;
-  width: 100%; */
-  height: 70vh;
 }
 
 main + section + section {
@@ -79,7 +227,5 @@ main + section + section {
 
 main + section > h2 {
   font-size: 2rem;
-  font-weight: bold;
   text-align: center;
-  margin: 0 auto;
 }
