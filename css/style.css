@@ -219,7 +219,7 @@ footer {
 footer nav {
   float: left;
   width: 50%;
-  padding: 3%;
+  padding: 2% 3% 3% 3%;
 }
 
 footer nav li img {
@@ -232,7 +232,7 @@ footer nav li img {
 footer > section + section {
   float: right;
   width: 50%;
-  padding: 5% 13% 0 25%;
+  padding: 3% 0% 0 35%;
   line-height: 20px;
 }
 
@@ -240,15 +240,23 @@ footer>section+section h6, footer>section+section span {
   padding-bottom: 5%;
 }
 
+footer>section+section span:first-child {
+  font-weight: 400;
+  padding: 0;
+}
+
 footer>section+section span {
   font-weight: 200;
   padding: 1%;
+  display: block;
 }
 
 footer>section+section a {
   color: white;
   text-decoration: none;
-  margin-top: 2%;
+  margin-top: 3%;
+  display: block;
+  text-indent: 3px;
 }
 
 /* section on the bottom */
