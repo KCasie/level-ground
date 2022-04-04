@@ -103,6 +103,11 @@ header nav > a {
   margin-top: 0.5%;
 }
 
+header nav>a:hover {
+  background: rgb(22, 31, 42);
+  color: white;
+}
+
 
 /* second section */
 
@@ -161,6 +166,12 @@ main + section + section a {
 main + section + section p {
   padding: 5% 0 10% 0;
   line-height: 20px;
+}
+
+/* change color on button hover */
+main+section+section a:hover, main+section+section+section a:hover {
+  background: rgb(22, 31, 42);
+  color: rgb(219, 223, 226);
 }
 
 /* fourth section  */
