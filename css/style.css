@@ -50,13 +50,15 @@ main > p {
 
 
 main > a {
+  background: url('https://placekitten.com/30/30') 0 50% no-repeat;
   text-decoration: none;
   color: rgb(219, 223, 226);
-  padding-left: 1%;
+  /* padding-left: 2%; */
+  padding: 10px 0 10px 45px;
 }
 
-main > img {
-  text-align: center;
+main + section + section img {
+  width: 100%;
 }
 
 main > span {
@@ -281,7 +283,7 @@ footer>section+section+section img {
 
 footer nav > ul {
   float: left;
-  width: 33.3333%;
+  /* width: 33.3333%; */
   padding-bottom: 2%;
 }
 
@@ -316,3 +318,43 @@ main + section > h2 {
   font-size: 2rem;
   text-align: center;
 }
+
+
+/* MEDIA QUERIES */
+
+@media all and (max-width: 1300px) {
+  footer > section + section {
+    padding-left: 31%;
+  }
+}
+
+@media all and (max-width: 984px) {
+  header nav > ul {
+    margin-left: 3%;
+  }
+  header nav > a {
+    margin-left: 24%;
+  }
+  /* sections */
+  main + section + section > * {
+    width: 100%;
+  }
+  main + section + section img {
+    width: 70%;
+  }
+  /* footer */
+  footer>section+section {
+    padding-left: 25%;
+  }
+}
+
+
+@media all and (max-width: 742px) {
+  footer>section+section {
+      padding-left: 19%;
+    }
+  .icons {
+    margin: -4px;
+  }
+}
+
